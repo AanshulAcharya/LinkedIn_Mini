@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="navbar bg-white shadow-sm py-2">
             <div className="container-fluid d-flex align-items-center justify-content-between">
                 <Link className="navbar-brand fs-4 text-dark" to="/">
-                <i class="bi bi-binoculars-fill"></i>
+                <i className="bi bi-binoculars-fill"></i>
                     MiniLinkedIn
                 </Link>
                 <div className="d-flex flex-wrap gap-2">

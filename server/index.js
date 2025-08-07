@@ -16,11 +16,12 @@ app.use(express.json());
 //Routes
 app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);
+app.use('/api/auth', require('./routes/auth'));
 
 // Test Route
-// app.get('/', (req, res) => {
-//     res.send('Server is running!');
-// });
+app.get('/', (req, res) => {
+    res.send('Server is running!');
+});
 
 //Connect to MongoDB
 connectDB();
